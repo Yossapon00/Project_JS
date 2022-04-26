@@ -21,21 +21,38 @@
     </div>
     <br><br><br>
     <center><B><div class = "title"><span>เช็คห้องว่าง</span></div></b></center>
-    <br><br>
-    <center>
+    <br>
+    <div class="container">
+        <div class="Topic">
+            <ul>
+                <li id="b1">ชื่อผู้จอง</li>
+                <li id="b2">หอพัก</li>
+                <li id="b3">ห้อง</li>
+                <li id="b4">วัน เดือน ปี</li>
+                <li id="b5">เวลาเริ่มต้น</li>
+                <li id="b6">เวลาสิ้นสุด</li>
+                <li id="b7">จำนวนคน</li>
+            </ul>
+        </div>
+        
         <% if(data.length == 0){ %>
-            <h1>ไม่พบข้อมูล</h1>  
-          <% } %>
-        <% for (var i = 0; i < data.length; i++) { %>
-            ชื่อผู้จอง : <%= data[i].UName%>
-            หอพัก : <%= data[i].Dormitory %>
-            ห้อง : <%= data[i].Room %>
-            วันที่ : <%= data[i].Appointment_request %>
-            เวลาเริ่ม : <%= data[i].TimeStart %>
-            เวลาสิ้นสุด : <%= data[i].TimeStop %>
-            จำนวนคน : <%= data[i].Participant %>
-            <br>
+            <center><h1>ไม่พบข้อมูล</h1>  </center>
         <% } %>
-    </center>
+        <% for (var i = 0; i < data.length; i++) { %>
+            <div class="DataofTopic">
+                <ul>
+                    <li class="c1" id="b1"><%= data[i].UName%></li>
+                    <li class="c2" id="b2"><%= data[i].Dormitory %></li>
+                    <li class="c1" id="b3"><%= data[i].Room %></li>
+                    <li class="c2" id="b4"><%= data[i].Appointment_request %></li>
+                    <li class="c1" id="b5"><%= data[i].TimeStart %></li>
+                    <li class="c2" id="b6"><%= data[i].TimeStop %></li>
+                    <li class="c1" id="b7"><%= data[i].Participant %></li>
+                </ul>
+            </div>
+        <% } %>
+    </div>
+    
+
 </body>
 </html>
