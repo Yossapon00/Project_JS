@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
-const db = require('monk')('localhost:27017/registerDB')
+const db = require('monk')(process.env.mongo_url || 'localhost:27017/registerDB')
 const { check , validationResult } = require('express-validator');
+require('dotenv').config()
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
