@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var Desktop01Router = require('./routes/Desktop01');
 var Desktop02Router = require('./routes/Desktop02');
 var Desktop02v2Router = require('./routes/Desktop02v2');
 var Desktop03Router = require('./routes/Desktop03');
@@ -24,7 +25,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', Desktop02Router);
+app.use('/', Desktop01Router);
 app.use('/Desktop02', Desktop02Router);
 app.use('/Desktop02v2', Desktop02v2Router);
 app.use('/Desktop03', Desktop03Router);
