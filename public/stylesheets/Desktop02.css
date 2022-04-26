@@ -1,0 +1,58 @@
+body {
+    font-family: 'Taviraj', serif;
+}
+
+.Desktop02 {
+    background-color: #F2EFEA;
+}
+
+.icon02 {
+    width: 18%;
+    height: auto;
+    cursor: pointer;
+    margin: 7px;
+    margin-top: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* a{
+    text-decoration: none;
+}
+
+* li{
+    list-style: none;
+}
+
+.container{
+    position: relative;
+    min-height: 10vh;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4097AA;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    padding: 0 20px;
+}
+
+.menu ul li a{
+    color: #F2EFEA;
+    font-size: 15px;
+}

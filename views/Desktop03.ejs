@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/Desktop03.css">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@200&display=swap" rel="stylesheet">
+    <title>Desktop03</title>
+</head>
+
+<body class="Desktop02">
+    <div class="container">
+        <div class="menu">
+            <div class="icon02">
+                <a href="#"><img src="images/icon02.png" alt="icon02" class="icon02"></a>
+            </div>
+            <ul>
+                <li><a href="/Desktop02">หน้าแรก</a></li>
+                <li><a href="/Desktop06v2">เช็คห้องว่าง</a></li>
+                <li><a href="/Desktop03">เข้าสู่ระบบ</a></li>
+                <li><a href="/Desktop04">สมัครสมาชิก</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="title"><span>เข้าสู่ระบบ</span></div>
+        <form action="/Desktop03" method="post">
+            <div class="row">
+                <input class="text" type="text" placeholder="อีเมล" name="email">
+            </div>
+            <div class="row">
+                <input class="password" type="password" placeholder="รหัสผ่าน" name="password">
+            </div>
+            <div class="row1">
+                <span><div class="pass"><a href="#">ลืมรหัสผ่าน?</a></div></span>
+                <div class="tooltip">
+                    หากลืมรหัสผ่านกรุณาติดต่อเจ้าหน้าที่<br>
+                    ที่เบอร์โทรศัพท์ 09x-xxx-xxxx
+                </div>
+            </div>
+            <div class="row">
+                <input class="submitcolor" type="submit" value="เข้าสู่ระบบ">
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">#</div>
+
+    <script>
+        document.querySelector('.submitcolor').onclick = function(){
+            var text = document.querySelector('.text').value,
+                password = document.querySelector('.password').value;
+            if(text == ""){
+                alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+            }
+            else if(password == ""){
+                alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

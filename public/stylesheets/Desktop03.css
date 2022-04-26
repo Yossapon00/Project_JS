@@ -1,0 +1,160 @@
+body {
+    font-family: 'Taviraj', serif;
+}
+
+.Desktop02 {
+    background-color: #F2EFEA;
+}
+
+.icon02 {
+    width: 18%;
+    height: auto;
+    cursor: pointer;
+    margin: 7px;
+    margin-top: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* a{
+    text-decoration: none;
+}
+
+* li{
+    list-style: none;
+}
+
+.container{
+    position: relative;
+    min-height: 20vh;
+}
+
+.menu{
+    position: relative;
+    width: 100%;
+    height: 9vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4097AA;
+}
+
+.menu ul{
+    display: flex;
+}
+
+.menu ul li{
+    padding: 0 20px;
+}
+
+.menu ul li a{
+    color: #F2EFEA;
+    font-size: 15px;
+}
+
+.wrapper {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    color: #060606;
+}
+
+.wrapper .title {
+    line-height: 110px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.wrapper form{
+    padding: 0px 0px 0px 0px;
+}
+
+.wrapper form .row{
+    height: 25;
+    margin-bottom: 10px;
+}
+
+.wrapper form .row1{
+    height: 25;
+    margin-bottom: 10px;
+    margin-left: 225px;
+}
+
+.wrapper form .row input{
+    height: 40px;
+    width: 300px;
+    outline: none;
+    padding-left: 10px;
+    background: #F2EFEA;
+
+    font-family: 'Taviraj', serif;
+    font-size: 15px;
+
+    border-radius: 3.5px;
+    border: 1px solid #22616F;
+}
+
+.wrapper form .row .submitcolor{
+    font-family: 'Taviraj', serif;
+    background: #4097AA;
+    color: #F2EFEA;
+    cursor: pointer;
+}
+
+.wrapper form .pass{
+    margin: -10px 0 10px 0;
+}
+
+.wrapper form .pass a{
+    color: #060606;
+    font-size: 15px;
+}
+
+.wrapper form .pass a:hover{
+    text-decoration: underline;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5.5%;
+    background-color: #4097AA;
+    color: #4097AA;
+    text-align: center;
+ }
+
+.tooltip {
+    display: inline-flex;
+    background: #B0CED2;
+    padding: 15px 15px;
+    position: absolute;
+    top: 326.5px;
+    right: 326.5px;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tooltip:before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #B0CED2;
+    bottom: 35px;
+    left: 0%;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+span:hover + div{
+    opacity: 1;
+    pointer-events: auto;
+}

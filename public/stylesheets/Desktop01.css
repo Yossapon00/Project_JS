@@ -1,0 +1,15 @@
+body {
+    font-family: 'Taviraj', serif;
+}
+
+.Desktop01 {
+    background-color: #4097AA;
+    margin-top: 23%;
+}
+
+.icon01 {
+    margin: 10px auto 20px;
+    display: block;
+    width: 3.5%;
+    height: auto;
+}

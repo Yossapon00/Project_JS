@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/Desktop05.css">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@200&display=swap" rel="stylesheet">
+    <title>Desktop05</title>
+</head>
+
+<body class="Desktop02">
+    <div class="container">
+        <div class="menu">
+            <div class="icon02">
+                <a href="#"><img src="images/icon02.png" alt="icon02" class="icon02"></a>
+            </div>
+            <ul>
+                <li><a href="/Desktop02v2">หน้าแรก</a></li>
+                <li><a href="/Desktop06">เช็คห้องว่าง</a></li>
+                <li><a href="/Desktop05">จองห้องติว</a></li>
+                <li><a href="/Desktop02">ออกจากระบบ</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="title"><span>จองห้องติว</span></div>
+        <form action="/Desktop05" method="post">
+            <div class="container1">
+                <div class="row">
+                    <select class="text1" name="Dormitory">
+                        <option selected disabled>หอพัก</option>
+                        <option value="ชาย">ชาย</option>
+                        <option value="หญิง1">หญิง1</option>
+                        <option value="หญิง2">หญิง2</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <select class="text2" name="Room">
+                        <option selected disabled>ห้อง</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            
+
+            <div class="row">
+                <input class="text3" type="date" name="Appointment_request">
+            </div>
+
+            <div class="container1">
+                <div class="row">
+                    <select class="text4" name="TimeStart">
+                        <option selected disabled>เวลาเริ่มต้น</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
+                        <option value="23:00">23:00</option>
+                    </select>
+                </div>
+
+                <div class="row">
+                    <select class="text5" name="TimeStop">
+                        <option selected disabled>เวลาสิ้นสุด</option>
+                        <option value="09:00">09:00</option>
+                        <option value="10:00">10:00</option>
+                        <option value="11:00">11:00</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
+                        <option value="23:00">23:00</option>
+                    </select>
+                </div>
+            </div>
+            
+
+            <div class="row">
+                <select class="text6" name="Participant">
+                    <option selected disabled>จำนวนผู้เข้าร่วม</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+
+            <br>
+            <div class="row">
+                <input class="submitcolor" type="submit" value="จองห้องติว">
+            </div>
+        </form>
+
+
+    </div>
+
+    <div class="footer">#</div>
+
+    <script>
+        document.querySelector('.submitcolor').onclick = function(){
+            var text3 = document.querySelector('.text3').value;
+
+            if(text3 == ""){
+                alert("กรุณาใส่ข้อมูลให้ครบถ้วน");
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

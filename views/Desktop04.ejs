@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/Desktop04.css">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@200&display=swap" rel="stylesheet">
+    <title>Desktop04</title>
+</head>
+
+<body class="Desktop02">
+    <div class="container">
+        <div class="menu">
+            <div class="icon02">
+                <a href="#"><img src="images/icon02.png" alt="icon02" class="icon02"></a>
+            </div>
+            <ul>
+                <li><a href="/Desktop02">หน้าแรก</a></li>
+                <li><a href="/Desktop06v2">เช็คห้องว่าง</a></li>
+                <li><a href="/Desktop03">เข้าสู่ระบบ</a></li>
+                <li><a href="/Desktop04">สมัครสมาชิก</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="title"><span>สมัครสมาชิก</span></div>
+        <form action="/Desktop04" method="post">
+            <div class="row">
+                <input class="text1" type="text" placeholder="ชื่อ-นามสกุล" name="username">
+            </div>
+            <div class="row">
+                <input class="text2" type="text" placeholder="อีเมล" name="email">
+            </div>
+            <div class="row">
+                <input class="text3" type="text" placeholder="เบอร์โทรศัพท์" name="phone">
+            </div>
+            <div class="row">
+                <input class="pass_1" type="password" placeholder="รหัสผ่าน" name="password1">
+            </div>
+            <div class="row">
+                <input class="pass_2" type="password" placeholder="ยืนยันรหัสผ่าน" name="password2">
+            </div>
+            <br>
+            <div class="row">
+                <input class="submitcolor" type="submit" value="สมัครสมาชิก">
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">#</div>
+
+    <script>
+        document.querySelector('.submitcolor').onclick = function(){
+            var pass_1 = document.querySelector('.pass_1').value,
+                pass_2 = document.querySelector('.pass_2').value,
+                text1 = document.querySelector('.text1').value,
+                text2 = document.querySelector('.text2').value,
+                text3 = document.querySelector('.text3').value;
+            if(text1 == ""){
+                alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+
+            }
+
+            else if(text2 == ""){
+                alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+
+            }
+
+            else if(text3 == ""){
+                alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+
+            }
+
+            else if(pass_1 == ""){
+                alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+
+            }
+
+            else if(pass_2 == ""){
+                alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+
+            }
+                
+            else if(pass_1 != pass_2){
+                alert("รหัสผ่านไม่ตรงกัน กรุณาลองใหม่อีกครั้ง");
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

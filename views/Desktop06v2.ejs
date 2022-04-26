@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" ><meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/Desktop06.css">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:wght@200&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="menu">
+        <div class="icon02">
+            <a href="#"><img src="images/icon02.png" alt="icon02" class="icon02"></a>
+        </div>
+        <ul>
+            <li><a href="/Desktop02">หน้าแรก</a></li>
+            <li><a href="/Desktop06v2">เช็คห้องว่าง</a></li>
+            <li><a href="/Desktop03">เข้าสู่ระบบ</a></li>
+            <li><a href="/Desktop04">สมัครสมาชิก</a></li>
+        </ul>
+    </div>
+    <br><br><br>
+    <center><B><div class = "title"><span>เช็คห้องว่าง</span></div></b></center>
+    <br><br>
+    <center>
+        <% if(data.length == 0){ %>
+            <h1>ไม่พบข้อมูล</h1>  
+          <% } %>
+        <% for (var i = 0; i < data.length; i++) { %>
+            หอพัก : <%= data[i].Dormitory %>
+            ห้อง : <%= data[i].Room %>
+            วันที่ : <%= data[i].Appointment_request %>
+            เวลาเริ่ม : <%= data[i].TimeStart %>
+            เวลาสิ้นสุด : <%= data[i].TimeStop %>
+            จำนวนคน : <%= data[i].Participant %>
+            <br>
+        <% } %>
+    </center>
+</body>
+</html>

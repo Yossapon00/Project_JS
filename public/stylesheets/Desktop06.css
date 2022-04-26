@@ -1,0 +1,172 @@
+body {
+    font-family: 'Taviraj', serif;
+    justify-content: center;
+    background-color: #FFFCFF;
+    }
+  
+    button {
+      width: 75px;
+      cursor: pointer;
+      border: 1px solid #000000;
+      outline: none;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  
+    #header {
+      padding: 10px;
+      color: #22616F;
+      font-size: 26px;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    #header button {
+      background-color:#B0CED2;
+      
+    }
+  
+    #container {
+      background-color:#B0CED2;
+      border-left: 58px solid #B0CED2;
+      border-right: 58px solid #B0CED2;
+      border-top: 30px solid #B0CED2;
+      border-bottom: 30px solid #B0CED2;
+      width: 830px;
+      position: absolute;
+      left: 22.54vw;
+    }
+    
+    #weekdays {
+      width: 100%;
+      display: flex;
+        background: #4097AA;
+    }
+  
+    #weekdays div {
+      width: 100px;
+      padding: 10px;
+      text-align: center;
+      color: white;
+      margin:auto;
+        width:70%;
+      border: 1.3999px solid #B0CED2;
+    }
+  
+    #calendar {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .day {
+      width: 100px;
+      padding: 10px;
+      height: 100px;
+      cursor: pointer;
+      box-sizing: border-box;
+      background-color: #4097AA;
+      margin: 1px;
+      box-shadow: 0px 0px 3px #CBD4C2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: white;
+    }
+  
+    .day:hover {
+      background-color: #e8faed;
+      
+    }
+    
+    .day + #currentDay {
+      background-color:#e8f4fa;
+    }
+  
+    .event {
+      font-size: 10px;
+      padding: 3px;
+      background-color: #58bae4;
+      color: white;
+      border-radius: 5px;
+      max-height: 55px;
+      overflow: hidden;
+    }
+    
+    .padding {
+      cursor: default !important;
+      box-shadow: none !important;
+      
+    }
+  
+    .menu{
+      position: relative;
+      width: 100%;
+      height: 9vh;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #4097AA;
+  }
+  
+  .menu ul{
+      display: flex;
+  }
+  
+  .menu ul li{
+      padding: 0 20px;
+  }
+  
+  .menu ul li a{
+      color: #F2EFEA;
+      font-size: 15px;
+  }
+  
+  .Desktop01 {
+    background-color: #4097AA;
+    margin-top: 23%;
+  }
+  
+  .icon01 {
+    margin: 10px auto 20px;
+    display: block;
+    width: 3.5%;
+    height: auto;
+  }
+  
+  .Desktop02 {
+    background-color: #F2EFEA;
+  }
+  
+  .icon02 {
+    width: 18%;
+    height: auto;
+    cursor: pointer;
+    margin: 7px;
+    margin-top: 10px;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  * a{
+    text-decoration: none;
+  }
+  
+  * li{
+    list-style: none;
+  }
+  
+  .title {
+    line-height: 90px;
+    font-size: 25px;
+  
+  }
+  
+  
