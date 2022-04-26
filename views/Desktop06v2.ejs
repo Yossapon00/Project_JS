@@ -27,6 +27,7 @@
             <h1>ไม่พบข้อมูล</h1>  
           <% } %>
         <% for (var i = 0; i < data.length; i++) { %>
+            ชื่อผู้จอง : <%= data[i].UName%>
             หอพัก : <%= data[i].Dormitory %>
             ห้อง : <%= data[i].Room %>
             วันที่ : <%= data[i].Appointment_request %>

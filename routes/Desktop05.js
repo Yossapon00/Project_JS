@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/', [
+  check("UName","").not().isEmpty(),
   check("Dormitory","").not().isEmpty(),
   check("Room","").not().isEmpty(),
   check("Appointment_request","").not().isEmpty(),
@@ -26,6 +27,7 @@ router.post('/', [
        {Appointment_request:req.body.Appointment_request}]}).then((doc1) => {
       if(doc1.length == 0 ){
         ct.insert({
+          UName:req.body.UName,
           Dormitory:req.body.Dormitory,
           Room:req.body.Room,
           Appointment_request:req.body.Appointment_request,
@@ -35,6 +37,7 @@ router.post('/', [
         })
         ct.find({}, {projection: {
           _id: 0,
+          UName: 1,
           Dormitory: 1,
           Room: 1,
           Appointment_request: 1,

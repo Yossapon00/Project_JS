@@ -6,6 +6,7 @@ router.get('/', function(req, res, next) {
   var ct = db.get('Time_data');
   ct.find({}, {projection: {
     _id: 0,
+    UName: 1,
     Dormitory: 1,
     Room: 1,
     Appointment_request: 1,
