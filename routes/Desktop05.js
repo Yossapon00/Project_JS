@@ -23,7 +23,7 @@ router.post('/', [
     res.render('Desktop05');
   }
   else{
-    var ct=db.get('Time_data1');
+    var ct=db.get('Time_data');
     ct.find({$and:[{Dormitory:req.body.Dormitory}, {Room:req.body.Room},
        {Appointment_request:req.body.Appointment_request}]}).then((doc1) => {
       if(doc1.length == 0 ){
