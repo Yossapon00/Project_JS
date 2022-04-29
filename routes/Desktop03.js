@@ -14,14 +14,13 @@ router.post('/', [
   check("password","").not().isEmpty()
 ], function(req, res, next) {
   const result = validationResult(req);
-  var errors = result.errors;
   if (!result.isEmpty()) {
     res.render('Desktop03');
   }else{
     var ct = db.get('Blogs');
     ct.find({$and:[{email:req.body.email}, {password1:req.body.password}]}).then((doc1) => {
       if(doc1.length == 0){
-        res.render('Desktop03',{errors: errors});
+        res.render('Desktop03');
       }else{
         res.render('Desktop02v2');
       }
